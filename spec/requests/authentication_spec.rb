@@ -34,6 +34,3 @@ RSpec.describe 'Authentications', type: :request do
     end
   end
 end
-
-# TODO: Continue with the tutorial:
-# https://www.digitalocean.com/community/tutorials/build-a-restful-json-api-with-rails-5-part-two
