@@ -21,7 +21,7 @@ RSpec.describe 'Todos', type: :request do
     end
   end
 
-  describe 'GET /todos/:id' do 
+  describe 'GET /todos/:id' do
     before { get "/todos/#{todo_id}", params: {}, headers: headers }
 
     context 'when the record exists' do
@@ -69,7 +69,7 @@ RSpec.describe 'Todos', type: :request do
     end
 
     context 'when the request is invalid' do
-      let(:invalid_attributes) { { title: nil}.to_json }
+      let(:invalid_attributes) { { title: nil }.to_json }
       before { post '/todos', params: invalid_attributes, headers: headers }
 
       it 'returns status code 422' do
